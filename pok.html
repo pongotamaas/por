@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJEKT01 - TESLA - SP</title>
+    <style>
+    body {background-color: rgb(95, 88, 88);}
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .row:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .col-s-1 {
+                width: 8.33%;
+            }
+
+            .col-s-2 {
+                width: 16.66%;
+            }
+
+            .col-s-3 {
+                width: 25%;
+            }
+
+            .col-s-4 {
+                width: 33.33%;
+            }
+
+            .col-s-5 {
+                width: 41.66%;
+            }
+
+            .col-s-6 {
+                width: 50%;
+            }
+
+            .col-s-7 {
+                width: 58.33%;
+            }
+
+            .col-s-8 {
+                width: 66.66%;
+            }
+
+            .col-s-9 {
+                width: 75%;
+            }
+
+            .col-s-10 {
+                width: 83.33%;
+            }
+
+            .col-s-11 {
+                width: 91.66%;
+            }
+
+            .col-s-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+
+        html {
+            font-family: "Impact";
+        }
+
+        .header {
+            font-family:Impact;
+            background-color: #000000;
+            color: blue;
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            padding: 15px;
+        }
+        #ff0000
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            font-family:Impact;
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: black;
+            color: rgb(0, 4, 255);
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #130161;
+            color: #5016ad;
+        }
+
+        .menu .active li {
+            background-color: #e6dbff;
+            color: #5016ad;
+        }
+
+        .menu a {
+            text-decoration: none;
+        }
+
+        .aside {
+            background-color: #000000;
+            padding: 15px;
+            color: #0011ff;
+            text-align: center;
+            font-family:Impact;
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #000000;
+            font-family:Impact;
+            color: #2600ff;
+            text-shadow: 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 5px
+                    #00d9ff, 0 0 20px
+                    #00d9ff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Szerencsekerék </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <p>11. évfolyam</p>
+            <ul>
+                <a class="active" href="https://sandorpeteer.github.io/web/11/Tesla_responsive.html">
+                    <li>Projekt 01: Szerencsekerék </li>
+                </a>
+                <a href="">
+                    <li>Projekt 02</li>
+                </a>
+                <a href="">
+                    <li>Projekt 03</li>
+                </a>
+                <a href="">
+                    <li>Projekt 04</li>
+                </a>
+            </ul>
+            <p>12. évfolyam</p>
+            <ul>
+                <a href="">
+                    <li>Projekt 01</li>
+                </a>
+                <a href="">
+                    <li>Projekt 02</li>
+                </a>
+                <a href="">
+                    <li>Projekt 03</li>
+                </a>
+            </ul>
+            <p>13. évfolyam</p>
+            <ul>
+                <a href="">
+                    <li>Projekt 01</li>
+                </a>
+                <a href="">
+                    <li>Projekt 02</li>
+                </a>
+                <a href="">
+                    <li>Projekt 03</li>
+                </a>
+            </ul>
+            <p>----------------</p>
+            <ul>
+                <a href="">
+                    <li>VISSZA</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <h1>Szerencsekerék </h1>
+            <p></p>
+            <p></p>
+            <p></p>
+
+            <p> </p>
+
+            <h2>Az általam épített KIT:</h2>
+            <img src="https://www.hestore.hu/images/comp/full/MTFCSzAzLQ.jpg" alt="Szerencsekerék">
+
+            <p>Ez egy Mini Tesla transzformátor KIT, BD243C tranzisztorral.</p>
+            <p>Egy 555-ös időzítőből trükkösen felépített folyamatosan lassuló oszcillátor lépteti a 4017-es johnson számlálót, mely vezérli a 10 db körben elhelyezett LED-et. A nyomógomb megnyomásakor körbe-körbe fut a LED-ek fénye, majd lassulva véletlenszerűen megáll egy számon (1-10-ig).</p>
+
+            <p>Beszerzési forrás: <a href="http://www.hestore.hu">www.hestore.hu</a> </p>
+
+            <h2 >Működtethető tápegységről vagy akkumulátorról is.
+            </h2>
+            <p>Műszaki adatok:</p>
+            <ul>
+                <li>Működési feszültség: 5v DC</li>
+                <li>Maximális áramfelvétel: 30mA</li>
+                
+            </ul>
+            <p>Az összeszereléshez szükséges még:</p>
+            <ul>
+                <li>forrasztópáka és ón,</li>
+                <li>oldalcsípő fogó,</li>
+                <li>Phillips fejű csavarhúzó</li>
+            </ul>
+
+            <p>Az összeszerelési dokumentációt <a href="https://sandorpeteer.github.io/web/11/minitesla.pdf">innen</a>
+                le lehet letölteni PDF fájlként. </p>
+
+            <h2>A kapcsolási rajza:</h2>
+            <img src="https://www.hestore.hu/images/bk_kits/7_sch_large.png" alt="Tesla Kapcsolási rajz">
+
+            <h2>Az alkatrészek, amiket felhasználtam:</h2>
+            <img src="https://sandorpeteer.github.io/web/11/img/alkatreszek.jpg" alt="alkatreszek">
+
+            <h2>A szerencsekerekem kész állapotában:</h2>
+            <img src="https://scontent.fbud4-1.fna.fbcdn.net/v/t1.15752-9/326956125_2545401318932714_2264771489897280450_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=X9iedLWO-TMAX86jkmP&_nc_ht=scontent.fbud4-1.fna&oh=03_AdRiqOf-rMIIIrAx7OsGAja-s_eoJjsLaooX9vV4g5Di2A&oe=63FDBBF1" alt="kész tekercs">
+
+            <h2>A forrasztási oldalról egy fénykép:</h2>
+            <img src="https://scontent.fbud4-1.fna.fbcdn.net/v/t1.15752-9/326097214_573733651280707_6238196567648494211_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dOBU3wIaZqYAX_07X8s&_nc_ht=scontent.fbud4-1.fna&oh=03_AdRT5eCyRRdjrXmrbVr42pZ1F5FXFD1g1N6nUILQFxgp8w&oe=63FDB95Chttps://scontent.fbud4-1.fna.fbcdn.net/v/t1.15752-9/326097214_573733651280707_6238196567648494211_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dOBU3wIaZqYAX_07X8s&_nc_ht=scontent.fbud4-1.fna&oh=03_AdRT5eCyRRdjrXmrbVr42pZ1F5FXFD1g1N6nUILQFxgp8w&oe=63FDB95C" alt="">
+
+            <p id="sp">Az áramkört készítettem: 2023.01.26.</p>
+            <p>Több információért keresd fel ezt az oldalt: <a
+                    href="https://en.wikipedia.org/wiki/Tesla_coil">https://en.wikipedia.org/wiki/Tesla_coil</a> </p>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>Nikola Tesla</h2>
+                <p>Az 1980-as években kezdett foglalkozni vele.</p>
+                <h2>Főbb paraméterek</h2>
+                <p>Működési feszültség: 9...12V DC</p>
+                <p>Maximális áramfelvétel: 660mA</p>
+                <p>Elkészítési idő: 15 perc</p>
+                <p>Méretek: 40 x 31 x 49mm</p>
+
+                <h2>Hogyan működik?</h2>
+                <p>A Tesla tekercsnek köszönhetően látványos elektromos és mágneses jelenségek jelenhetnek meg, mint
+                    például a villódzó és ágaskodó elektromos kisülések</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Készítette: Pongó Tamás</p>
+        <p>A projekt megvalósult: 2023.01.26.</p>
+        <p>Helyszín: Miskolci Szakképzési Centrum Kandó Kálmán Informatikai Technikum. </p>
+    </div>
+
+</body>
+
+</html>
